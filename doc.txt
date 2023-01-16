@@ -1,0 +1,11 @@
+bookself app
+
+dipendencies;
+    json-server
+    axios
+    redux (state managemet)(redux, react-redux)
+    react router dom
+
+    iş sırası
+    -veri yapısı ve ilişkilerin kurulması+
+    -global bir axios dosyası oluşturma

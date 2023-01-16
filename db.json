@@ -1,0 +1,28 @@
+{
+    "books":[{
+        "id":"1",
+        "name":"kral şakir",
+        "author":"Şakir Şimşek",
+        "publisher":"İş Bankası Yayınları",
+        "isbn":"65476854165",
+        "price":"29",
+        "categoryId":"1"
+        }],
+
+    "categories":[{
+        "id":"1",
+        "name":"roman"
+
+        },
+        {
+            "id":"2",
+            "name":"bilimkurgu"
+        },
+        {
+            "id":"3",
+            "name":"deneme"
+        }
+      
+    
+    ]
+}
