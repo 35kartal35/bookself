@@ -7,5 +7,7 @@ dipendencies;
     react router dom
 
     iş sırası
-    -veri yapısı ve ilişkilerin kurulması+
-    -global bir axios dosyası oluşturma
+    -veri yapısı ve ilişkilerin kurulması +
+    -global bir axios dosyası oluşturma +
+    -redux yapısı oluşturma (temel seviyede)
+        a)hangi stateleri yükleyeceğimize karar vermemiz lazım
