@@ -1,5 +1,5 @@
-Wecome to my project,
+Welcome to my project,
 <br>
-Redux, Json-server, axios or db.json in my project. 
+Redux (actions, reducer or store), Json-server (port-8000), axios (get) or db.json (books or categories) in my project.
 <br>
 Thank you for viewing....
