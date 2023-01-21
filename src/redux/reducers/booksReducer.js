@@ -31,6 +31,13 @@ const booksReducer=(state=initialState,action)=>{
                 fail:true,
                 error:action.payload
             }
+            case actionTypes.bookaction.DELETE_BOOK_START:
+                return{
+                    ...state,
+                    pending:true
+                }
+                case actionTypes.bookaction.DELETE_BOOK_SUCCESS:
+                    let filteredbooks=state.books.filter(item=>item.id !== action.payload)
         default:
             return state
     }

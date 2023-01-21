@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import { useSelector } from "react-redux";
+import Listbooks from "../components/Listbooks";
 
 const HomePage=()=>{
     const {booksState,categoriesState}=useSelector(state=>state)
@@ -9,7 +10,7 @@ const HomePage=()=>{
     return(
         <div>
             <Header/>
-            <h1>HomePage</h1>
+            <Listbooks/>
         </div>
     )
 }
