@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import actionTypes from "./redux/actions/actionTypes";
 import api from "./api/api";
 import urls from "./api/urls";
+import AddBook from "./pages/AddBook";
 
 function App() {
   const dispatch=useDispatch()
@@ -31,11 +32,13 @@ function App() {
         dispatch({type:actionTypes.categoryAction.GET_CATEGORIES_FAİL,payload:"serverda bir hata oldu"})
        });
   }, []);
-    
+    if (booksState.success === false || categoriesState.success === false)
+    return null;
     return (
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomePage/>}/>
+      <Route path="/add-book" element={<AddBook/>}/>
     </Routes>
     </BrowserRouter>
   );

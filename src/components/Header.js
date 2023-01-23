@@ -22,9 +22,12 @@ const Header = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item nav-item-center">
           <Link className="nav-link active" aria-current="page" to="/">Kitap Listele</Link>
-        </li>
+                  </li>
+                  <li>
+                  <Link className="nav-link active" aria-current="page" to="/add-book">Kitap Ekle</Link>
+                  </li>
         </ul>
     </div>
   </div>
