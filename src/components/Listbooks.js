@@ -1,23 +1,26 @@
 import React from "react";
-
+import { useState } from "react";
 import "../assets/style/General.css"
 import api from "../api/api";
 import urls from "../api/urls";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import actionTypes from "../redux/actions/actionTypes";
+import CustomModal from "./CustomModal";
 
 const Listbooks=()=>{
     const dispatch = useDispatch();
     const {booksState} = useSelector(state=>state);
     const {categoriesState} = useSelector(state=>state)
+    const [showDeleteModal,setShowdeleteModal]=useState(false)
+    const [willDeleteBook,setWillDeleteBook]=useState("")
+    
     console.log(booksState);
 
     const deleteBook=(id)=>{
         
-        dispatch({type:actionTypes.bookaction.DELETE_BOOK_START})
-        api
-            .delete(`${urls.books}/${id}`)
+          dispatch({type:actionTypes.bookaction.DELETE_BOOK_START})
+        api.delete(`${urls.books}/${id}`)
             .then((res)=>{
                 dispatch({
                     type: actionTypes.bookaction.DELETE_BOOK_SUCCESS,
@@ -31,12 +34,15 @@ const Listbooks=()=>{
 
                 });
                 });
+
+        
+        
             
 
         };
         
     return (
-        <table className="table table-striped my-5">
+        <><table className="table table-striped my-5">
   <thead>
     <tr>
       <th scope="col">Sıra No</th>
@@ -58,7 +64,10 @@ const Listbooks=()=>{
       <td>{book.author}</td>
       <td>@mdo</td>
       <td>
-        <button onClick={()=> deleteBook(book.id)} className="generalBtn deleteBtn">sil</button>
+        <button onClick={()=> {
+          setShowdeleteModal(true)
+          setWillDeleteBook(book.id)
+        }} className="generalBtn deleteBtn">sil</button>
         <button className="generalBtn editBtn">Güncelle</button>
         <button className="generalBtn detailBtn">Detay</button>
       </td>
@@ -66,8 +75,21 @@ const Listbooks=()=>{
   ) })}
   </tbody>
 </table>
+{
+  showDeleteModal===true && (
+    <CustomModal title="Silme" 
+    message="Silmek İstediğinize Emin misiniz?"
+    onCancel={()=>setShowdeleteModal(false)}
+    onConfirm={()=>{
+      deleteBook(willDeleteBook)
+      setShowdeleteModal(false)
+    }}
+    />
+    
+  )}
+</>
     );
     
-}
+};
 
-export default Listbooks
+export default Listbooks;

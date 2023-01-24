@@ -10,32 +10,23 @@
       "categoryId": "1"
     },
     {
-        "id": "2",
-        "name": "İnce Memed",
-        "author": "Necip Fazıl Kısakürek",
-        "publisher": "Y.K.Y.",
-        "isbn": "65476854165",
-        "price": "70",
-        "categoryId": "2"
-      },
-      {
-        "id": "3",
-        "name": "Kraliçeyi Kurtarmak",
-        "author": "Ahmet ŞAFAK",
-        "publisher": "CAN",
-        "isbn": "65476854165",
-        "price": "100",
-        "categoryId": "3"
-      },
-      {
-        "id": "4",
-        "name": "REİS",
-        "author": "Soner YALÇIN",
-        "publisher": "İNKILAP",
-        "isbn": "65476854165",
-        "price": "50",
-        "categoryId": "2"
-      }
+      "id": "2",
+      "name": "İnce Memed",
+      "author": "Necip Fazıl Kısakürek",
+      "publisher": "Y.K.Y.",
+      "isbn": "65476854165",
+      "price": "70",
+      "categoryId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Kraliçeyi Kurtarmak",
+      "author": "Ahmet ŞAFAK",
+      "publisher": "CAN",
+      "isbn": "65476854165",
+      "price": "100",
+      "categoryId": "3"
+    }
   ],
   "categories": [
     {
