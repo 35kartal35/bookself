@@ -4,5 +4,5 @@ Redux (actions, reducer or store), Json-server (port-8000), axios (get) or db.js
 <br>
 Thank you for viewing...
 
-more to come. the project continues.
-![React App ve diğer 2 sayfa - Kişisel - Microsoft_ Edge 2023-01-22 00-12-22](https://user-images.githubusercontent.com/114434307/213887679-89b0ed71-c013-4bb9-8caf-7ac54aeb355e.gif)
+
+![React App ve diğer 2 sayfa - Kişisel - Microsoft_ Edge 2023-01-24 09-41-47](https://user-images.githubusercontent.com/114434307/214228762-5b6ad51c-153b-4a46-868c-9786c3550c3e.gif)
