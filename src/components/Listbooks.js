@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import actionTypes from "../redux/actions/actionTypes";
 import CustomModal from "./CustomModal";
-
+import { Link } from "react-router-dom";
 const Listbooks=()=>{
     const dispatch = useDispatch();
     const {booksState} = useSelector(state=>state);
@@ -36,13 +36,14 @@ const Listbooks=()=>{
                 });
 
         
-        
-            
-
-        };
+              };
         
     return (
-        <><table className="table table-striped my-5">
+        <>
+        <div>
+          <Link to={"/add-book"} className="btn btn-primary">Kitap Ekle</Link>
+        </div>
+        <table className="table table-striped">
   <thead>
     <tr>
       <th scope="col">Sıra No</th>
@@ -69,7 +70,7 @@ const Listbooks=()=>{
           setWillDeleteBook(book.id)
         }} className="generalBtn deleteBtn">sil</button>
         <button className="generalBtn editBtn">Güncelle</button>
-        <button className="generalBtn detailBtn">Detay</button>
+        <Link to={`/book-detail/${book.id}`} className="generalBtn detailBtn">Detay</Link>
       </td>
     </tr>
   ) })}

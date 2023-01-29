@@ -6,6 +6,7 @@ import actionTypes from "./redux/actions/actionTypes";
 import api from "./api/api";
 import urls from "./api/urls";
 import AddBook from "./pages/AddBook";
+import BookDetail from "./pages/BookDetail";
 
 function App() {
   const dispatch=useDispatch()
@@ -39,6 +40,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/add-book" element={<AddBook/>}/>
+      <Route path="/book-detail/:bookId" element={<BookDetail/>} />
     </Routes>
     </BrowserRouter>
   );

@@ -1,14 +1,18 @@
 import React from "react";
 import Header from "../components/Header";
-import AddTheBook from "../components/AddTheBook";
+
 
 const AddBook=()=>{
     return(
         <div>
             <Header/>
-            <AddTheBook/>
+            <div className="container my-5">
+            <h1>
+                memoli
+            </h1>
+            </div>
         </div>
     )
 }
 
-export default AddBook
+export default AddBook;
