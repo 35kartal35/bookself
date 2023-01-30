@@ -26,6 +26,26 @@
       "isbn": "65476854165",
       "price": "100",
       "categoryId": "3"
+    },
+    {
+      "id": "1675109557181",
+      "name": "mehmegt özdemir",
+      "aother": "",
+      "publisher": "kelime",
+      "isbn": "158461651",
+      "price": "152",
+      "categoryId": "3",
+      "author": "hüseyin baş"
+    },
+    {
+      "id": "1675109720004",
+      "name": "Kaşağı",
+      "aother": "",
+      "publisher": "iş Bankası",
+      "isbn": "18793247854",
+      "price": "150",
+      "categoryId": "3",
+      "author": "Sueda Özdemir"
     }
   ],
   "categories": [

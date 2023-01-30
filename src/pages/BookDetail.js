@@ -37,7 +37,7 @@ const BookDetail=()=>{
             <h1>Yayınevi: {myBook.publisher}</h1>
             <h1>ISBN: {myBook.isbn}</h1>
             <h1>Kategori: {bookCategory.name}</h1>
-            <Link to={"/"}>Geri</Link>
+            <Link className="btn btn-secondary" to={"/"}>Geri</Link>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ const Listbooks=()=>{
         
     return (
         <>
-        <div>
+        <div className="d-flex justify-content-end">
           <Link to={"/add-book"} className="btn btn-primary">Kitap Ekle</Link>
         </div>
         <table className="table table-striped">

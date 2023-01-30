@@ -7,6 +7,7 @@ import api from "./api/api";
 import urls from "./api/urls";
 import AddBook from "./pages/AddBook";
 import BookDetail from "./pages/BookDetail";
+import Error from "./pages/Error";
 
 function App() {
   const dispatch=useDispatch()
@@ -41,6 +42,7 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/add-book" element={<AddBook/>}/>
       <Route path="/book-detail/:bookId" element={<BookDetail/>} />
+      <Route path="*" element={<Error/>} />
     </Routes>
     </BrowserRouter>
   );
