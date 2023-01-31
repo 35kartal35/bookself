@@ -63,7 +63,8 @@ const Listbooks=()=>{
       <th scope="row">{index+1}</th>
       <td>{book.name}</td>
       <td>{book.author}</td>
-      <td>@mdo</td>
+      <td>{book.price} &#8378;</td>
+      <td>{myCategory.name}</td>
       <td>
         <button onClick={()=> {
           setShowdeleteModal(true)

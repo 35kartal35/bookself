@@ -28,24 +28,14 @@
       "categoryId": "3"
     },
     {
-      "id": "1675109557181",
-      "name": "mehmegt özdemir",
+      "id": "1675186627001",
+      "name": "merline",
       "aother": "",
-      "publisher": "kelime",
-      "isbn": "158461651",
-      "price": "152",
-      "categoryId": "3",
-      "author": "hüseyin baş"
-    },
-    {
-      "id": "1675109720004",
-      "name": "Kaşağı",
-      "aother": "",
-      "publisher": "iş Bankası",
-      "isbn": "18793247854",
-      "price": "150",
-      "categoryId": "3",
-      "author": "Sueda Özdemir"
+      "publisher": "İNKILAP ",
+      "isbn": "1269874636",
+      "price": "52",
+      "categoryId": "2",
+      "author": "Mehmet ÖZDEMİR"
     }
   ],
   "categories": [
