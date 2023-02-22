@@ -1,5 +1,5 @@
 Hello,
-## In this project, I used React, Redux, Router DOM, Fake-API.
+## In this project, I used React, Redux, Router DOM, REST-API.
 Best regards.
 
 
