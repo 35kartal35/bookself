@@ -6,7 +6,8 @@ const actionTypes={
         DELETE_BOOK_START:"DELETE_BOOK_START",
         DELETE_BOOK_SUCCESS:"DELETE_BOOK_SUCCESS",
         DELETE_BOOK_FAİL:"DELETE_BOOK_FAİL",
-        ADD_BOOK:"ADD_BOOK"
+        ADD_BOOK:"ADD_BOOK",
+        EDİT_BOOK:"EDİT_BOOK"
 
     },
 

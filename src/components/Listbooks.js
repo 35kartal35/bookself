@@ -70,7 +70,8 @@ const Listbooks=()=>{
           setShowdeleteModal(true)
           setWillDeleteBook(book.id)
         }} className="generalBtn deleteBtn">sil</button>
-        <button className="generalBtn editBtn">Güncelle</button>
+        <Link to={`/edit-book/${book.id}`} className="btn btn-Success">Güncelle</Link>
+        
         <Link to={`/book-detail/${book.id}`} className="generalBtn detailBtn">Detay</Link>
       </td>
     </tr>

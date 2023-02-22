@@ -5,8 +5,10 @@ import api from "../api/api";
 import urls from "../api/urls";
 
 
+
 const BookDetail=()=>{
     const params=useParams()
+   
     const[myBook,setMyBook]=useState(null)
     const[bookCategory,setBookCategory]=useState(null)
     useEffect(()=>{
@@ -25,7 +27,7 @@ const BookDetail=()=>{
         })
         .catch(err=>{});
         
-    },[]) 
+    },[params]) 
     if(myBook === null || bookCategory === null) return null;                                     
     return(
         <div>
@@ -37,7 +39,7 @@ const BookDetail=()=>{
             <h1>Yayınevi: {myBook.publisher}</h1>
             <h1>ISBN: {myBook.isbn}</h1>
             <h1>Kategori: {bookCategory.name}</h1>
-            <Link className="btn btn-secondary" to={"/"}>Geri</Link>
+            <Link className="btn btn-primary" to={"/"}>Geri</Link>
             </div>
         </div>
     );

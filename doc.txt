@@ -11,3 +11,12 @@ dipendencies;
     -global bir axios dosyası oluşturma +
     -redux yapısı oluşturma (temel seviyede)
         a)hangi stateleri yükleyeceğimize karar vermemiz lazım
+
+        AddBook 
+
+        1-önce boostrapten bir tablo alınıp düzenlenecek
+    altına kaydet butonu yazılacak type sı submit olacak (handlesubmit)
+
+    kaydet'e basılınca useEffect tetiklenip fakeapiye post işlemi yapılıp veriler
+    kaydedilecek ardından then işleminden hemen sonra categorisi gelecek sonra navigation ile HomePage e 
+    geri dönülecek.
