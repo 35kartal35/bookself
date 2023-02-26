@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { Link, useParams } from "react-router-dom";
 import api from "../api/api";
 import urls from "../api/urls";
+import "../stylecss/detay.css"
 
 
 
@@ -30,9 +31,9 @@ const BookDetail=()=>{
     },[params]) 
     if(myBook === null || bookCategory === null) return null;                                     
     return(
-        <div>
+        <div >
             <Header/>
-            <div className="container my-5">
+            <div className="detail" >    
             <h1>Kitap Adı: {myBook.name}</h1>
             <h1>Yazar Adı: {myBook.author}</h1>
             <h1>Fiyatı: {myBook.price}</h1>
